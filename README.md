@@ -6,13 +6,18 @@
 
 ### Informations
 
-![image](https://user-images.githubusercontent.com/67120829/184670096-ac85ed45-a1b1-4749-b4b8-1f19864f8a2c.png)
+![image](https://user-images.githubusercontent.com/67120829/184670449-f169c954-bd4a-431a-8ba2-9b4749a070f1.png)
 
-### 
+### Categories of glass
 
-{1: "Building Window \n(processed)",
-            2: "Building Window \n(non processed)",
-            3: "Vehicule Window \n(processed)",
-            5: "Container",
-            6: "Tableware",
-            7: "Headlamp"}
+1: "Building Window (processed)"
+2: "Building Window (non processed)"
+3: "Vehicule Window (processed)"
+5: "Container"
+6: "Tableware"
+7: "Headlamp"
+
+### Data vizualisation
+
+![image](https://user-images.githubusercontent.com/67120829/184675329-c14a9f9f-0442-42ba-bb96-7d181886854b.png)
+
