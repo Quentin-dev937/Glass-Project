@@ -19,5 +19,9 @@
 
 ### Data vizualisation
 
-![image](https://user-images.githubusercontent.com/67120829/184675329-c14a9f9f-0442-42ba-bb96-7d181886854b.png)
+![image](https://user-images.githubusercontent.com/67120829/184677530-9fae211e-33d0-41a4-b281-e19dc7d3d897.png)
+
+![Uploading image.png…]()
+
+
 
