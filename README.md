@@ -35,13 +35,13 @@ There is 9 predictive variables (features) and 1 target variable.
 
 ### Data Analysis
 
-#### Data types and Missing values
+##### Data types and Missing values
 
 The variables are of two types: float (continues values) and integer (discrete values) and no values are missing.
 
 ![image](https://user-images.githubusercontent.com/67120829/184670449-f169c954-bd4a-431a-8ba2-9b4749a070f1.png)
 
-#### Data statistical description
+##### Data statistical description
 
 Some of the variables are skew (Mg) and others are well centered (Si). Indeed, the mean and the median of the Mg variable are quite different and very similar for the Si variable. Also, the standard deviations of th eMg variable is high and low for the Si variable.
 
@@ -49,7 +49,7 @@ Some of the variables are skew (Mg) and others are well centered (Si). Indeed, t
 
 We can add that the variables don't have the same scale.
 
-- We can observe that the weighted percentage of the Si oxyde is way higher than the other oxyde. This is explained by the fact that glass are mostly made of Silice.
+- We can observe that the weighted percentage of the Si oxyde is way higher than the other oxyde. This is explained by the fact that glass are mostly made of Si oxyde.
 
 #### Data correlation
 
@@ -59,8 +59,16 @@ The next figure report the absolute value of the spearman correlation for each v
 
 ![image](https://user-images.githubusercontent.com/67120829/184677530-9fae211e-33d0-41a4-b281-e19dc7d3d897.png)
 
-The most correlated variables are the Ca oxyde and the reflective index. We can assume that modifying Ca oxyde can have an important impact on the reflective index of the glass.
+The most correlated variables are the Ca oxyde and the reflective index (0.7). We can assume that modifying Ca oxyde can have an important impact on the reflective index of the glass.
 The features are not sufficiently correlated to be discard so we keep them all.
+
+#### Target modes
+
+As mentioned before, there is 6 categories of glass in the target variable. The graphique below displays the proportion of each categories.
+
+![image](https://user-images.githubusercontent.com/67120829/184688350-f445c7e6-bb66-4204-89a0-aa50f90c5fd2.png)
+
+AS we can observe, the categories are highly unbalanced with 36% of the data belonging to the "Building Window (processed)" category and 4% of the data belonging to the "Headlamp" category.
 
 
 
