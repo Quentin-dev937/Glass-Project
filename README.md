@@ -35,13 +35,13 @@ There is 9 predictive variables (features) and 1 target variable.
 
 ### Data Analysis
 
-##### Data types and Missing values
+#### Data types and Missing values
 
 The variables are of two types: float (continues values) and integer (discrete values) and no values are missing.
 
 ![image](https://user-images.githubusercontent.com/67120829/184670449-f169c954-bd4a-431a-8ba2-9b4749a070f1.png)
 
-##### Data statistical description
+#### Data statistical description
 
 Some of the variables are skew (Mg) and others are well centered (Si). Indeed, the mean and the median of the Mg variable are quite different and very similar for the Si variable. Also, the standard deviations of th eMg variable is high and low for the Si variable.
 
