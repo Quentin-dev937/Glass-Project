@@ -87,11 +87,8 @@ The first steps of the processing phase is the scaling of the data in order to h
 
 In order to optimze the training of the algorithm and to obtain a more balanced training set, we used the Random over Sampling method to add data to the training set. 
 
-Before adding
-![image](https://user-images.githubusercontent.com/67120829/184840379-e918b895-d7c3-4194-8c7b-e3863c258178.png)
+![image](https://user-images.githubusercontent.com/67120829/184852619-fa3673f7-a784-4bf9-840c-a854a80bf71a.png)
 
-After adding
-![image](https://user-images.githubusercontent.com/67120829/184852098-8afe5437-845a-42ba-a6eb-9d74ba9fca16.png)
 
 
 
