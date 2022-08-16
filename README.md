@@ -70,24 +70,70 @@ As mentioned before, there is 6 categories of glass in the target variable. The 
 
 AS we can observe, the categories are highly unbalanced with 36% of the data belonging to the "Building Window (processed)" category and 4% of the data belonging to the "Headlamp" category.
 
-### Data modelisation
-
 Now, it's time to apply data science algorithme to our data. We can recall that the target variable is very unbalanced and the predictive variables don't have the same scale nor the same range. Furthermore, the number of observations in the dataset is very low.
 So, an additonal phase of data processing is needed to make the data more suitable for our algorithme.
 
-But first, the dataset is divided into 2 parts: one for the training (80%: 171 values) and one for the validation/testing (20%: 43 values). 
+But first, the dataset is divided into 2 parts: one for the training (80%: 171 values) and one for the validation (20%: 43 values). 
 
-#### Data processing
+### Data processing
 
-##### Scaling
+#### Scaling
 
 The first steps of the processing phase is the scaling of the data in order to have them at the same scale. Since some variables are also skewed, the robust version of the Standard scaler is used.
 
-##### Adding training observations
+#### Adding training observations
 
 In order to optimze the training of the algorithm and to obtain a more balanced training set, we used the Random over Sampling method to add data to the training set. 
 
 ![image](https://user-images.githubusercontent.com/67120829/184852619-fa3673f7-a784-4bf9-840c-a854a80bf71a.png)
+
+The next step: the modelisation
+
+### Data modelisation
+
+#### Algorithm
+
+We used a simple but quite efficient Machine Learning algorithm to perform the task of data modelisation: the Random Forest Classifier with the initial parameters.
+
+#### Results
+
+This algorithm reached 91% accuracy on the validation set.
+
+![image](https://user-images.githubusercontent.com/67120829/184854342-c36fac7c-8395-4229-bc89-3ec407f656b5.png)
+
+The confusion matrix allow us to better understand the performance of the model on the validation set. This graphic show the number of values for each real and predicted category.
+
+![image](https://user-images.githubusercontent.com/67120829/184855872-cfe820ff-e979-43b1-b40a-abcade6423c7.png)
+
+Most of the categories are well predicted as most of the values are located in the diagonal. Every values not located in the diagonal are errors of prediction fo the algorithm.
+
+#### Model Interpretation
+
+The lase step is the interpretation of the model. Basically, the goal is to get answer to those questions:
+- Which predictive variables are important (and which are not so important) ?
+- How are they impacting the model ?
+
+We used the SHAP tools to create a graph to answer those questions.
+
+![image](https://user-images.githubusercontent.com/67120829/184857708-ba3a1df6-29c5-48ad-ba6a-d225cf38e7e1.png)
+
+The graphic show the variable (features) inportance of the model. 
+The Mg oxyde is the most important features and the Fe oxyde is the least important feature. But every features add an impact on the model decision.
+
+The other interesting aspect is how each feature is connected to a category of glass. For exemple:
+- Mg oxyde is important to the "Building window processed"
+- Ba oxyde is important to the "Headlamp" category.
+- K oxyde is important to the "Tableware" category.
+
+
+### Conclusion
+
+This dataset is quite fun and very approchable to analyse. This short study aimed to display a wide range of tools of data science.
+
+also it could be interresting to:
+- have more data 
+- train differents models 
+- perform cross validation (training and testing on differents subset of the data) 
 
 
 
