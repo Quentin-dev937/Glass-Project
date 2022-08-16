@@ -66,11 +66,30 @@ The features are not sufficiently correlated to be discard so we keep them all.
 
 As mentioned before, there is 6 categories of glass in the target variable. The graphique below displays the proportion of each categories.
 
-![image](https://user-images.githubusercontent.com/67120829/184688350-f445c7e6-bb66-4204-89a0-aa50f90c5fd2.png)
+![image](https://user-images.githubusercontent.com/67120829/184841375-857d8351-ba3d-47f7-b9b1-d3d28397a647.png)
 
 AS we can observe, the categories are highly unbalanced with 36% of the data belonging to the "Building Window (processed)" category and 4% of the data belonging to the "Headlamp" category.
 
+### Data modelisation
 
+Now, it's time to apply data science algorithme to our data. We can recall that the target variable is very unbalanced and the predictive variables don't have the same scale nor the same range. Furthermore, the number of observations in the dataset is very low.
+So, an additonal phase of data processing is needed to make the data more suitable for our algorithme.
+
+But first, the dataset is divided into 2 parts: one for the training (80%: 171 values) and one for the validation/testing (20%: 43 values). 
+
+#### Data processing
+
+##### Scaling
+
+The first steps of the processing phase is the scaling of the data in order to have them at the same scale. Since some variables are also skewed, the robust version of the Standard scaler is used.
+
+##### Adding training observations
+
+In order to optimze the training of the algorithm and to obtain a more balanced training set, we used the Random over Sampling method to add data to the training set. 
+
+![image](https://user-images.githubusercontent.com/67120829/184840379-e918b895-d7c3-4194-8c7b-e3863c258178.png)
+
+![image](https://user-images.githubusercontent.com/67120829/184841453-77bb36af-77ab-48a0-8d05-ebdd5e617829.png)
 
 
 
